@@ -1,0 +1,9 @@
+Initial State:
+stack1: A
+stack2: E C
+stack3: D B
+
+Goal State:
+stack1: B D
+stack2: E
+stack3: A C

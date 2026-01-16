@@ -1,0 +1,1113 @@
+[
+  {
+    "sample_id": "sample_1",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3",
+      "box4"
+    ],
+    "initial_state": {
+      "box1": "C1,4",
+      "box2": "C2,8",
+      "box3": "C2,2",
+      "box4": "C2,1"
+    },
+    "goal_locations": {
+      "box1": "C2,8",
+      "box2": "C2,2",
+      "box3": "C1,2",
+      "box4": "C2,5"
+    },
+    "description": "Plan for a grid of size 2x8 with 4 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_2",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3"
+    ],
+    "initial_state": {
+      "box1": "C1,4",
+      "box2": "C2,4",
+      "box3": "C2,3"
+    },
+    "goal_locations": {
+      "box1": "C1,1",
+      "box2": "C1,6",
+      "box3": "C2,3"
+    },
+    "description": "Plan for a grid of size 2x8 with 3 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_3",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3",
+      "box4"
+    ],
+    "initial_state": {
+      "box1": "C2,7",
+      "box2": "C2,5",
+      "box3": "C1,4",
+      "box4": "C2,4"
+    },
+    "goal_locations": {
+      "box1": "C1,2",
+      "box2": "C1,8",
+      "box3": "C2,4",
+      "box4": "C1,7"
+    },
+    "description": "Plan for a grid of size 2x8 with 4 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_4",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3",
+      "box4",
+      "box5"
+    ],
+    "initial_state": {
+      "box1": "C1,1",
+      "box2": "C1,3",
+      "box3": "C1,5",
+      "box4": "C2,7",
+      "box5": "C2,4"
+    },
+    "goal_locations": {
+      "box1": "C2,7",
+      "box2": "C2,5",
+      "box3": "C2,4",
+      "box4": "C1,6",
+      "box5": "C1,4"
+    },
+    "description": "Plan for a grid of size 2x8 with 5 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_5",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3",
+      "box4"
+    ],
+    "initial_state": {
+      "box1": "C1,7",
+      "box2": "C1,6",
+      "box3": "C2,7",
+      "box4": "C1,5"
+    },
+    "goal_locations": {
+      "box1": "C2,4",
+      "box2": "C1,6",
+      "box3": "C2,2",
+      "box4": "C1,4"
+    },
+    "description": "Plan for a grid of size 2x8 with 4 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_6",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3"
+    ],
+    "initial_state": {
+      "box1": "C1,6",
+      "box2": "C2,2",
+      "box3": "C1,5"
+    },
+    "goal_locations": {
+      "box1": "C1,3",
+      "box2": "C2,2",
+      "box3": "C2,1"
+    },
+    "description": "Plan for a grid of size 2x8 with 3 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_7",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3"
+    ],
+    "initial_state": {
+      "box1": "C2,7",
+      "box2": "C2,6",
+      "box3": "C1,8"
+    },
+    "goal_locations": {
+      "box1": "C1,7",
+      "box2": "C1,6",
+      "box3": "C1,5"
+    },
+    "description": "Plan for a grid of size 2x8 with 3 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  },
+  {
+    "sample_id": "sample_8",
+    "grid": {
+      "rows": 2,
+      "cols": 8,
+      "cells": [
+        "C1,1",
+        "C1,2",
+        "C1,3",
+        "C1,4",
+        "C1,5",
+        "C1,6",
+        "C1,7",
+        "C1,8",
+        "C2,1",
+        "C2,2",
+        "C2,3",
+        "C2,4",
+        "C2,5",
+        "C2,6",
+        "C2,7",
+        "C2,8"
+      ],
+      "adjacency": {
+        "C1,1": [
+          "C1,2",
+          "C2,1"
+        ],
+        "C1,2": [
+          "C1,1",
+          "C1,3",
+          "C2,2"
+        ],
+        "C1,3": [
+          "C1,2",
+          "C1,4",
+          "C2,3"
+        ],
+        "C1,4": [
+          "C1,3",
+          "C1,5",
+          "C2,4"
+        ],
+        "C1,5": [
+          "C1,4",
+          "C1,6",
+          "C2,5"
+        ],
+        "C1,6": [
+          "C1,5",
+          "C1,7",
+          "C2,6"
+        ],
+        "C1,7": [
+          "C1,6",
+          "C1,8",
+          "C2,7"
+        ],
+        "C1,8": [
+          "C1,7",
+          "C2,8"
+        ],
+        "C2,1": [
+          "C2,2",
+          "C1,1"
+        ],
+        "C2,2": [
+          "C2,1",
+          "C2,3",
+          "C1,2"
+        ],
+        "C2,3": [
+          "C2,2",
+          "C2,4",
+          "C1,3"
+        ],
+        "C2,4": [
+          "C2,3",
+          "C2,5",
+          "C1,4"
+        ],
+        "C2,5": [
+          "C2,4",
+          "C2,6",
+          "C1,5"
+        ],
+        "C2,6": [
+          "C2,5",
+          "C2,7",
+          "C1,6"
+        ],
+        "C2,7": [
+          "C2,6",
+          "C2,8",
+          "C1,7"
+        ],
+        "C2,8": [
+          "C2,7",
+          "C1,8"
+        ]
+      }
+    },
+    "arms": [
+      "C1,1",
+      "C1,2",
+      "C1,3",
+      "C1,4",
+      "C1,5",
+      "C1,6",
+      "C1,7",
+      "C1,8",
+      "C2,1",
+      "C2,2",
+      "C2,3",
+      "C2,4",
+      "C2,5",
+      "C2,6",
+      "C2,7",
+      "C2,8"
+    ],
+    "boxes": [
+      "box1",
+      "box2",
+      "box3"
+    ],
+    "initial_state": {
+      "box1": "C2,8",
+      "box2": "C1,1",
+      "box3": "C1,8"
+    },
+    "goal_locations": {
+      "box1": "C2,4",
+      "box2": "C2,1",
+      "box3": "C1,1"
+    },
+    "description": "Plan for a grid of size 2x8 with 3 boxes. Each cell has one robot arm. The task is to move each box from its initial cell to its goal cell through a sequence of legal moves. At every time step, a box can either remain in place, move to an adjacent cell, or if it is at its goal cell, be marked as 'goal' and remain there."
+  }
+]

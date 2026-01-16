@@ -1,0 +1,8 @@
+pandas
+openai
+tiktoken
+numpy
+anthropic
+mistralai
+typing-extensions
+python-dotenv

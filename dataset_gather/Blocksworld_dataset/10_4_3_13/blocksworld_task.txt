@@ -1,0 +1,10 @@
+Initial State:
+stack1: A D J
+stack2: I C F B
+stack3: G
+stack4: H E
+
+Goal State:
+stack1: B C G
+stack2: E F H I J
+stack3: A D
